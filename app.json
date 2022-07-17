@@ -1,0 +1,25 @@
+{
+  "name": "test",
+  "description": "test",
+  "logo": "https://telegra.ph/file/fe4379cb5ebf812e",
+  "website": "",
+  "env": {
+  
+        "TEST": {
+        "description": "Get",
+        "required": true,
+        "value": ""
+        }
+  },
+      "buildpacks": [
+        {"url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"},
+        {"url": "heroku/html"}
+    ],
+  "formation": {
+        "worker": {
+            "quantity": 1, 
+            "size": "free" 
+        }
+    },
+      "stack": "heroku-20"
+}
